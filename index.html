@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Picture</title>
+        <link rel="stylesheet" type="text/css" href="global.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <header>
+            <h3>Portafolio de Imégenes</h3>
+            <input type="text" placeholder="Buscar imagenes (...)">
+            <div onclick="clicked()">
+                <input type="checkbox" checkec="false" id="ch" onchange="showMenu(event.target.checked)"><i class="fas fa-chevron-circle-down"></i> Filtro
+            </div>
+            
+        </header>
+        <div class="space"></div>
+        <div class="container">
+            <div id="dash"></div>
+            <div class="menu">
+                <nav>
+                    <br><br>
+                    <h3 onclick="showMenu(false)"><i class="fas fa-times"></i> Selecciona Categorias</h3>
+                    <br>
+                    <li><input checked type="checkbox" name="filter" value="paisajes" onchange="imgs()"> Paisajes</li>
+                    <li><input checked type="checkbox" name="filter" value="viajes" onchange="imgs()"> Paisajes</li>
+                    <li><input checked type="checkbox" name="filter" value="mascotas" onchange="imgs()"> Mascotas</li>
+                    <li><input checked type="checkbox" name="filter" value="arquitectura" onchange="imgs()"> Arquitectura</li>
+                    <li><input checked type="checkbox" name="filter" value="proyectos" onchange="imgs()"> Proyectos</li>
+                    
+                </nav>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
